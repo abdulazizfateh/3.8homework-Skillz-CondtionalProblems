@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: SSP4;
+    src: url(../assets/fonts/SourceSans3-Regular.ttf);
+}
+
+@font-face {
+    font-family: SSP7;
+    src: url(../assets/fonts/SourceSans3-Bold.ttf);
+}
+
+* {
+    user-select: none;
+}
+
+@theme {
+    --color-primary: #1C1C33;
+    --color-secondary: #57D9A6;
+    --color-primary-bg: #23233B;
+    --color-white: #F6F6F8;
+
+    --font-SSP4: SSP4;
+    --font-SSP7: SSP7;
+}
+
+
+.container {
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.title_big {
+    font-family: var(--font-SSP7);
+    font-size: 36px;
+    line-height: 40px;
+    color: var(--color-white);
+}
+
+.title {
+    font-family: var(--font-SSP7);
+    font-size: 32px;
+    line-height: 36px;
+    color: var(--color-white);
+}
+
+.desc {
+    font-family: var(--font-SSP4);
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--color-white);
+}
+
+.desc_small {
+    font-family: var(--font-SSP4);
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.card_title {
+    font-family: var(--font-SSP4);
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--color-primary);
+}
+
+.btn {
+    padding: 10px 16px;
+    background-color: var(--color-secondary);
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--font-SSP4);
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.8px;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    transition: .1s ease-in;
+    &:hover{
+        background-color: transparent;
+        border: 1px solid var(--color-secondary);
+        color: var(--color-white);
+    }
+}
+
+
+
+@media (min-width: 640px) {
+    .container {
+        padding: 0 24px;
+    }
+
+    .title_big {
+        font-size: 42px;
+        line-height: 46px;
+    }
+
+    .title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .desc {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .desc_small {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .card_title {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .btn {
+        padding: 12px 18px;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .title_big {
+        font-size: 48px;
+        line-height: 50px;
+    }
+
+    .title {
+        font-size: 40px;
+        line-height: 47px;
+    }
+
+    .desc {
+        font-size: 22px;
+        line-height: 33px;
+    }
+
+    .desc_small {
+        font-size: 17px;
+        line-height: 27px;
+    }
+
+    .card_title {
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+
+    .btn {
+        padding: 16px 24px;
+        font-size: 17px;
+        line-height: 27px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 32px;
+    }
+
+    .title_big {
+        font-size: 55px;
+        line-height: 60.5px;
+    }
+
+    .title {
+        font-size: 44px;
+        line-height: 52.8px;
+    }
+}
